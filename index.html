@@ -2,22 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cube Soccer Online</title>
-    <!-- External Libraries -->
-    <script src="https://cdn.ably.com"></script>
+    
+    <!-- 1. Move these to the VERY top of the Head -->
     <script src="https://cdnjs.cloudflare.com"></script>
+    <script src="https://cdn.ably.com"></script>
+
     <style>
-        body { margin: 0; overflow: hidden; background: #111; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        #ui { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; 
-              background: rgba(0,0,0,0.85); padding: 40px; border-radius: 20px; color: white; border: 2px solid #444; z-index: 10; }
-        input, button { display: block; width: 220px; margin: 15px auto; padding: 12px; border-radius: 8px; border: none; font-size: 16px; }
-        input { background: #222; color: white; border: 1px solid #555; }
-        button { background: #28a745; color: white; cursor: pointer; font-weight: bold; transition: 0.3s; }
-        button:hover { background: #218838; transform: scale(1.05); }
-        #score { position: absolute; top: 20px; width: 100%; text-align: center; color: white; font-size: 32px; font-weight: bold; pointer-events: none; }
+        /* Keep your CSS here */
+        body { margin: 0; overflow: hidden; background: #111; }
+        #ui { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 100; color: white; text-align: center; background: rgba(0,0,0,0.8); padding: 20px; border-radius: 10px; }
+        button { padding: 10px 20px; cursor: pointer; }
     </style>
 </head>
+
 <body>
 
 <div id="score">RED 0 - 0 BLUE</div>
